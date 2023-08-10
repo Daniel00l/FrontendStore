@@ -226,14 +226,17 @@ h3{
     margin: 0;
 }
 
+
+.camisa{
+    padding: 2rem;
+    
+}
 /**Pagina del producto**/
 
 @media (min-width: 768px){
      .camisa{
-        display: grid;
         grid-template-columns: repeat(2,1fr);
         column-gap: 2rem;
-        margin: 3rem;
      }
 }
 
@@ -254,6 +257,14 @@ h3{
     
 }
 
+/**Los campos de los formalurios no se adaptan por si solos de tamaño se resulve con el 
+siguiente codigo donde se encuentra el bloque de .formulario campos **/
+@media (max-width:768px ){
+    .formulario__campo{
+        width: 100%;
+    }
+}
+
 .formulario__submit{
     background-color: var(--secundario);
     border: none;
@@ -262,7 +273,6 @@ h3{
     padding: 2rem;
     transition: background-color .3s ease;
     transition: font-size .3s ease;
-
     grid-column: 1/3 ;
 }
 
